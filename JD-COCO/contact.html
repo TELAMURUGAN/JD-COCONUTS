@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JD Coconuts | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Product Images Same Size -->
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="JD.html">
+            <img src="images/jd-logo.jpg" width="45" height="45" class="rounded-circle" alt="JD Logo">
+            JD Coconuts
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="JD.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="why-choose-us.html">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-success text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead">Get in touch with JD Coconuts for product and bulk enquiries.</p>
+    </div>
+</header>
+
+<section class="container py-5">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h4 class="text-success">Our Location</h4>
+                    <p>Mayanoor, Karur, Tamil Nadu</p>
+                    <a class="btn btn-outline-success"
+                       href="https://www.google.com/maps/search/?api=1&query=Mayanoor%2C+Karur%2C+Tamil+Nadu"
+                       target="_blank">View Map</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h4 class="text-success">Call Us</h4>
+                    <p>9025265918</p>
+                    <a href="tel:9025265918" class="btn btn-outline-success">Call Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h4 class="text-success">Email Us</h4>
+                    <p class="text-break">elamurugan1221@gmail.com</p>
+                    <a href="mailto:elamurugan1221@gmail.com" class="btn btn-outline-success">Send Email</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container pb-5">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <h2 class="text-success fw-bold">Send an Enquiry</h2>
+            <p>Fill in your details and describe the product or quantity you need.</p>
+
+            <form action="mailto:elamurugan1221@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="Name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="Phone">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="Email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="product" class="form-label">Product Enquiry</label>
+                    <select class="form-select" id="product" name="Product">
+                        <option value="">Choose a product</option>
+                        <option>Coconut Husk</option>
+                        <option>Coir Fibre</option>
+                        <option>Coco Peat</option>
+                        <option>Coco Peat Blocks</option>
+                        <option>Grow Bags</option>
+                        <option>Bulk Material Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit Enquiry</button>
+            </form>
+
+            <p class="text-muted small mt-3">
+                Note: The email form depends on the visitor's email application. It is not a server-connected form.
+            </p>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="text-success">Chat on WhatsApp</h3>
+                    <p>For product details, bulk quantity enquiries and other questions, message us on WhatsApp.</p>
+                    <p><strong>WhatsApp:</strong> 9025265918</p>
+                    <a href="https://wa.me/919025265918"
+                       target="_blank"
+                       class="btn btn-success btn-lg">Message on WhatsApp</a>
+
+                    <hr>
+
+                    <h5 class="text-success">Business Address</h5>
+                    <p class="mb-1">JD Coconuts</p>
+                    <p class="mb-0">Mayanoor, Karur, Tamil Nadu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-1">&copy; 2026 JD Coconuts. All Rights Reserved.</p>
+    <p class="mb-0">Mayanoor, Karur, Tamil Nadu</p>
+    <a class="text-white" href="JD.html">Back to Home</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+```

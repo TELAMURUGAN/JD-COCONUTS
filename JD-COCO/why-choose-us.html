@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why Choose Us | JD Coconuts</title>
+
+    <meta name="description"
+          content="Discover the business approach of JD Coconuts for coconut trading, natural coconut materials and bulk enquiries.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --dark-green: #123D28;
+            --deep-green: #0B291B;
+            --cream: #F8F5EA;
+            --light-green: #E7F0E5;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: #26352B;
+            font-family: Arial, sans-serif;
+            animation: pageOpen 0.5s ease;
+        }
+
+        @keyframes pageOpen {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            background-color: var(--dark-green);
+        }
+
+        .navbar-brand img {
+            object-fit: cover;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #A8D5A2;
+        }
+
+        .why-hero {
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(7, 35, 20, 0.78),
+                    rgba(7, 35, 20, 0.78)
+                ),
+                url("images/coconut-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-title {
+            color: var(--dark-green);
+            font-weight: 800;
+        }
+
+        .reason-card {
+            height: 100%;
+            padding: 32px 25px;
+            background-color: white;
+            border: 1px solid #E8EDE7;
+            border-radius: 18px;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(18, 61, 40, 0.12);
+        }
+
+        .reason-icon {
+            width: 72px;
+            height: 72px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: var(--light-green);
+            color: #247343;
+            border-radius: 18px;
+            font-size: 32px;
+        }
+
+        .reason-card h3 {
+            color: var(--dark-green);
+            font-weight: 750;
+        }
+
+        .values-section {
+            background-color: white;
+        }
+
+        .value-item {
+            padding: 22px;
+            border-radius: 14px;
+            background-color: var(--cream);
+            height: 100%;
+        }
+
+        .value-item i {
+            font-size: 26px;
+            color: #198754;
+        }
+
+        .process-number {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: var(--dark-green);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .cta-section {
+            background-color: var(--dark-green);
+        }
+
+        footer {
+            background-color: var(--deep-green);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #A8D5A2;
+        }
+
+        @media (max-width: 576px) {
+            .why-hero {
+                min-height: 270px;
+            }
+
+            .why-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .reason-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER / NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center gap-2"
+           href="JD.html">
+
+            <img src="images/jd-logo.jpg"
+                 alt="JD Coconuts Logo"
+                 width="48"
+                 height="48"
+                 class="rounded-circle bg-white p-1">
+
+            <span class="fw-bold fs-4">JD COCONUTS</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="JD.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       aria-current="page"
+                       href="why-choose-us.html">
+                        Why Choose Us
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-success fw-semibold px-3"
+                       href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<header class="why-hero">
+    <div class="container py-5">
+
+        <span class="badge rounded-pill bg-success p-2 mb-3">
+            OUR COMMITMENT
+        </span>
+
+        <h1 class="display-3 fw-bold">
+            Why Choose JD Coconuts?
+        </h1>
+
+        <p class="lead mt-3">
+            Natural Coconut Products. Clear Communication.
+            Business Opportunities.
+        </p>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mt-4 mb-0">
+
+                <li class="breadcrumb-item">
+                    <a href="JD.html" class="text-white">Home</a>
+                </li>
+
+                <li class="breadcrumb-item active text-white"
+                    aria-current="page">
+                    Why Choose Us
+                </li>
+
+            </ol>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- INTRODUCTION -->
+<section class="container py-5">
+
+    <div class="text-center mx-auto" style="max-width: 780px;">
+
+        <span class="badge bg-success mb-3">
+            THE JD COCONUTS APPROACH
+        </span>
+
+        <h2 class="section-title display-6">
+            A Practical Approach to Coconut Trading
+        </h2>
+
+        <p class="text-secondary mt-3">
+            We focus on understanding product requirements,
+            discussing quantities clearly and exploring
+            suitable business opportunities in coconut-based materials.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- REASONS TO CHOOSE US -->
+<section class="py-5" style="background-color: white;">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title display-6">
+                What Makes Our Approach Different?
+            </h2>
+
+            <p class="text-secondary mt-2">
+                Our key business priorities.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- REASON 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-leaf-fill"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Natural Product Categories
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Explore coconut husk, coir fibre,
+                        coco peat and other coconut-related
+                        product enquiries.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REASON 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-box-seam-fill"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Bulk Enquiry Support
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Discuss your required quantities,
+                        product availability and loading
+                        requirements with us.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REASON 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Clear Communication
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Share your requirements and discuss
+                        the details needed to proceed with
+                        your business enquiry.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REASON 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Buyer & Seller Enquiries
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Connect with us to discuss coconut
+                        product buying and selling requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REASON 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-clipboard-check-fill"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Requirement-Based Discussions
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Discuss product type, quantity,
+                        expected delivery arrangements and
+                        other relevant requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- REASON 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="reason-card text-center">
+
+                    <div class="reason-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+
+                    <h3 class="h5 mt-4">
+                        Long-Term Opportunities
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Explore the possibility of ongoing
+                        business discussions based on
+                        availability and mutual requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- OUR VALUES -->
+<section class="values-section py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <span class="badge bg-success mb-3">
+                    OUR VALUES
+                </span>
+
+                <h2 class="section-title display-6">
+                    Business Built on Clear Expectations
+                </h2>
+
+                <p class="text-secondary mt-3">
+                    We believe that a good business enquiry
+                    starts with understanding what each party
+                    needs and communicating the details clearly.
+                </p>
+
+                <a href="about.html"
+                   class="btn btn-outline-success mt-2 px-4">
+                    Learn About Us
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="row g-3">
+
+                    <div class="col-sm-6">
+                        <div class="value-item">
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            <h5 class="fw-bold mt-3">
+                                Transparency
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Discuss product requirements,
+                                quantities and availability clearly.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="value-item">
+
+                            <i class="bi bi-handshake-fill"></i>
+
+                            <h5 class="fw-bold mt-3">
+                                Cooperation
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Understand the requirements of
+                                buyers and sellers.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="value-item">
+
+                            <i class="bi bi-chat-square-text-fill"></i>
+
+                            <h5 class="fw-bold mt-3">
+                                Communication
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Keep business discussions focused
+                                on the details that matter.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="value-item">
+
+                            <i class="bi bi-tree-fill"></i>
+
+                            <h5 class="fw-bold mt-3">
+                                Natural Resources
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Focus on coconut-based products
+                                and related business opportunities.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- HOW TO ENQUIRE -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <span class="badge bg-success mb-2">
+            GET STARTED
+        </span>
+
+        <h2 class="section-title display-6">
+            How to Make an Enquiry
+        </h2>
+
+        <p class="text-secondary">
+            Three simple steps to begin a business discussion.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="d-flex gap-3 align-items-start">
+
+                <div class="process-number">1</div>
+
+                <div>
+                    <h5 class="fw-bold">Choose a Product</h5>
+
+                    <p class="text-secondary">
+                        Explore our product categories and
+                        identify the material you need.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="d-flex gap-3 align-items-start">
+
+                <div class="process-number">2</div>
+
+                <div>
+                    <h5 class="fw-bold">Share Requirements</h5>
+
+                    <p class="text-secondary">
+                        Tell us the product type, required
+                        quantity and delivery location.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="d-flex gap-3 align-items-start">
+
+                <div class="process-number">3</div>
+
+                <div>
+                    <h5 class="fw-bold">Discuss the Details</h5>
+
+                    <p class="text-secondary">
+                        Discuss availability and the next steps
+                        for your specific enquiry.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT CTA -->
+<section class="cta-section py-5 text-white">
+
+    <div class="container text-center py-3">
+
+        <i class="bi bi-chat-heart-fill display-4"></i>
+
+        <h2 class="display-6 fw-bold mt-3">
+            Let's Discuss Your Requirements
+        </h2>
+
+        <p class="lead mt-3">
+            Looking for coconut products or planning a bulk enquiry?
+            We welcome your business enquiry.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+
+            <a href="contact.html"
+               class="btn btn-light btn-lg fw-semibold px-4">
+                Contact Us
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+
+            <a href="products.html"
+               class="btn btn-outline-light btn-lg px-4">
+                View Products
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="py-4 text-white">
+
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6 text-center text-md-start">
+
+                <h5 class="fw-bold mb-1">
+                    JD COCONUTS
+                </h5>
+
+                <p class="small text-white-50 mb-0">
+                    Coconut Trading & Natural Products
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-center text-md-end">
+
+                <a href="JD.html" class="me-3">Home</a>
+
+                <a href="about.html" class="me-3">About Us</a>
+
+                <a href="products.html" class="me-3">Products</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+        <hr class="border-secondary my-3">
+
+        <p class="small text-center text-white-50 mb-0">
+            &copy; 2026 JD Coconuts. All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
